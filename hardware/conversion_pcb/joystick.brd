@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1619,6 +1619,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -1926,7 +1929,7 @@ design rules under a new name.</description>
 <wire x1="63.5" y1="19.685" x2="65.405" y2="19.685" width="0.4064" layer="1"/>
 <wire x1="65.405" y1="19.685" x2="66.04" y2="20.32" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$2">
+<signal name="X-PRESCALE">
 <contactref element="R2" pad="2"/>
 <contactref element="IC1" pad="3"/>
 <wire x1="64.135" y1="31.81" x2="64.135" y2="36.195" width="0.6096" layer="1"/>
@@ -1938,7 +1941,7 @@ design rules under a new name.</description>
 <contactref element="R23" pad="2"/>
 <wire x1="22.6945" y1="44.45" x2="17.6145" y2="49.53" width="0.6096" layer="1"/>
 </signal>
-<signal name="N$3">
+<signal name="X-5V">
 <contactref element="R2" pad="3"/>
 <wire x1="66.04" y1="40.64" x2="66.04" y2="44.45" width="0.6096" layer="1"/>
 <wire x1="66.04" y1="44.45" x2="64.77" y2="45.72" width="0.6096" layer="1"/>
@@ -1952,7 +1955,7 @@ design rules under a new name.</description>
 <wire x1="54.61" y1="22.225" x2="53.34" y2="20.955" width="0.4064" layer="1"/>
 <wire x1="53.34" y1="20.955" x2="53.34" y2="20.32" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$5">
+<signal name="Y-PRESCALE">
 <contactref element="R4" pad="2"/>
 <contactref element="IC2" pad="3"/>
 <wire x1="57.785" y1="31.81" x2="57.785" y2="36.195" width="0.6096" layer="1"/>
@@ -1964,7 +1967,7 @@ design rules under a new name.</description>
 <contactref element="R21" pad="2"/>
 <wire x1="19.837" y1="43.18" x2="17.6145" y2="45.4025" width="0.6096" layer="1"/>
 </signal>
-<signal name="N$6">
+<signal name="Y-5V">
 <contactref element="R4" pad="3"/>
 <contactref element="X3" pad="6"/>
 <wire x1="59.69" y1="40.64" x2="59.69" y2="46.99" width="0.6096" layer="1"/>
@@ -1976,7 +1979,7 @@ design rules under a new name.</description>
 <wire x1="44.45" y1="20.955" x2="45.085" y2="20.32" width="0.4064" layer="1"/>
 <wire x1="45.085" y1="20.32" x2="48.26" y2="20.32" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$8">
+<signal name="Z-PRESCALE">
 <contactref element="R6" pad="2"/>
 <contactref element="IC3" pad="3"/>
 <wire x1="51.435" y1="31.81" x2="51.435" y2="36.195" width="0.6096" layer="1"/>
@@ -1988,7 +1991,7 @@ design rules under a new name.</description>
 <contactref element="R17" pad="2"/>
 <wire x1="18.2495" y1="41.91" x2="17.6145" y2="41.275" width="0.6096" layer="1"/>
 </signal>
-<signal name="N$9">
+<signal name="Z5V">
 <contactref element="R6" pad="3"/>
 <wire x1="53.34" y1="40.64" x2="53.34" y2="44.45" width="0.6096" layer="1"/>
 <wire x1="53.34" y1="44.45" x2="54.61" y2="45.72" width="0.6096" layer="1"/>
@@ -2002,7 +2005,7 @@ design rules under a new name.</description>
 <wire x1="36.83" y1="22.225" x2="35.56" y2="20.955" width="0.4064" layer="1"/>
 <wire x1="35.56" y1="20.955" x2="35.56" y2="20.32" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$11">
+<signal name="Z2-PRESCALE">
 <contactref element="R8" pad="2"/>
 <contactref element="IC4" pad="3"/>
 <wire x1="32.385" y1="31.81" x2="32.385" y2="36.195" width="0.6096" layer="1"/>
@@ -2012,7 +2015,7 @@ design rules under a new name.</description>
 <wire x1="18.8845" y1="38.1" x2="17.6145" y2="36.83" width="0.6096" layer="1"/>
 <wire x1="32.385" y1="36.195" x2="32.385" y2="38.1" width="0.6096" layer="1"/>
 </signal>
-<signal name="N$12">
+<signal name="Z2-5V">
 <contactref element="R8" pad="3"/>
 <contactref element="X2" pad="4"/>
 <wire x1="34.29" y1="46.99" x2="34.29" y2="40.64" width="0.6096" layer="1"/>
@@ -2067,7 +2070,7 @@ design rules under a new name.</description>
 <wire x1="31.75" y1="24.13" x2="39.37" y2="24.13" width="0.4064" layer="1"/>
 <wire x1="39.37" y1="24.13" x2="40.005" y2="23.495" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$17">
+<signal name="X-OUT">
 <contactref element="IC1" pad="6"/>
 <contactref element="X1" pad="1"/>
 <wire x1="53.1114" y1="12.7" x2="55.88" y2="12.7" width="0.4064" layer="1"/>
@@ -2096,7 +2099,7 @@ design rules under a new name.</description>
 <via x="50.165" y="15.5575" extent="1-16" drill="0.6"/>
 <wire x1="50.165" y1="15.5575" x2="49.2125" y2="16.51" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$18">
+<signal name="Y-OUT">
 <contactref element="IC2" pad="6"/>
 <contactref element="X1" pad="2"/>
 <wire x1="50.3682" y1="12.7" x2="50.3682" y2="12.9032" width="0.4064" layer="1"/>
@@ -2120,7 +2123,7 @@ design rules under a new name.</description>
 <wire x1="33.401" y1="15.494" x2="47.5742" y2="15.494" width="0.4064" layer="1"/>
 <wire x1="47.5742" y1="15.494" x2="50.3682" y2="12.7" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$19">
+<signal name="Z-OUT">
 <contactref element="IC3" pad="6"/>
 <contactref element="R9" pad="1"/>
 <wire x1="13.97" y1="9.373" x2="14.453" y2="9.373" width="0.4064" layer="1"/>
@@ -2144,7 +2147,7 @@ design rules under a new name.</description>
 <wire x1="45.72" y1="12.7" x2="48.26" y2="10.16" width="0.4064" layer="1"/>
 <wire x1="48.26" y1="10.16" x2="48.9966" y2="10.16" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$21">
+<signal name="X-OFFSET">
 <contactref element="R13" pad="2"/>
 <contactref element="R14" pad="1"/>
 <contactref element="U$1" pad="19/A5"/>
@@ -2152,7 +2155,7 @@ design rules under a new name.</description>
 <wire x1="18.898" y1="19.05" x2="19.05" y2="19.202" width="0.4064" layer="1"/>
 <wire x1="19.05" y1="19.202" x2="19.05" y2="21.438" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$22">
+<signal name="Z2-OFFSET">
 <contactref element="R15" pad="2"/>
 <contactref element="R16" pad="1"/>
 <contactref element="U$1" pad="22/A8"/>
@@ -2161,7 +2164,7 @@ design rules under a new name.</description>
 <wire x1="10.947" y1="10.16" x2="11.43" y2="10.643" width="0.4064" layer="1"/>
 <wire x1="11.43" y1="8.407" x2="11.43" y2="10.643" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$23">
+<signal name="Z-OFFSET">
 <contactref element="R10" pad="1"/>
 <contactref element="R9" pad="2"/>
 <contactref element="U$1" pad="21/A7"/>
@@ -2172,7 +2175,7 @@ design rules under a new name.</description>
 <wire x1="13.818" y1="12.065" x2="13.97" y2="12.217" width="0.4064" layer="1"/>
 <wire x1="13.97" y1="12.217" x2="13.97" y2="14.453" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$24">
+<signal name="Y-OFFSET">
 <contactref element="R11" pad="2"/>
 <contactref element="R12" pad="1"/>
 <contactref element="U$1" pad="20/A6"/>
@@ -2182,7 +2185,7 @@ design rules under a new name.</description>
 <wire x1="16.027" y1="15.875" x2="16.51" y2="15.392" width="0.4064" layer="1"/>
 <wire x1="16.51" y1="15.392" x2="16.51" y2="17.628" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$25">
+<signal name="Z2-OUT">
 <contactref element="IC4" pad="6"/>
 <contactref element="R15" pad="1"/>
 <wire x1="11.43" y1="5.563" x2="11.913" y2="5.563" width="0.4064" layer="1"/>
